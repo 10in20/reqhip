@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+		<title>v2 &#8211; mensagensmagneticas.info</title>
+<style type="text/css">
+
+    div.jslm_main-up-wrapper .jslm_input_field .tmce-active .switch-tmce ,
+    div.jslm_main-up-wrapper .jslm_input_field .tmce-active .switch-html {background: #f0f0f0 !important;color: #797b7e !important;border-bottom-color: #f0f0f0 !important;}
+    div.jslm_main-up-wrapper .jslm_input_field button:not(:hover):not(:active):not(.has-background) {background: #f0f0f0 !important;color: #797b7e !important;}
+    div.jslm_main-up-wrapper div.jslm_dropdown_wrp select.jslm_input_field{border: 1px solid #d4d4d5;background-color: #ffffff;color: #797b7e;}
+    /* plugin color */
+    .border-top{border-top: 1px solid #d4d4d5;}
+    .jslm_border_bottom{border-bottom: 1px solid #d4d4d5;}
+    li a.headerlinks.active,
+    .jslm_section_title.active,
+    a.active{background-color: #e43039 ;color: #ffffff ;}
+    div.jslm_content_wrapper div.jslm_content_data a.button{background-color: #f0f0f0;color: #4d4d4d;border: 1px solid #d4d4d5;}
+    div.jslm_content_wrapper div.js-form-wrapper-newlogin div.js-imagearea img{background-color: #e43039}
+    div.jslm_content_wrapper div.page_heading{color: #4d4d4d}
+    div.jslm_content_wrapper div.js-form-wrapper-newlogin div.js-dataarea input.button.jslms-newsubmit{color: #ffffff;background-color: #e43039;}
+    /*div.jslm-panel-heading.active{background-color: #e43039;}*/
+    /* venobox */
+    a.vbox-next,a.vbox-prev{background-color: #ffffff;}
+    /* Modal */
+    .modal-header{background-color: #e43039;}
+    div.jslm_content_data div.jslm_modal_body span.jslm_search_field input.jslm_field_style{border: 1px solid #d4d4d5;background: #fafafa;color: #797b7e;}
+    div.jslm_content_data div.jslm_modal_body span.jslm_search_field input.jslm_field_style::-webkit-input-placeholder{color: #797b7e;}
+    div.jslm_content_data div.jslm_modal_body span.jslm_search_field input.jslm_field_style::-moz-placeholder{color: #797b7e;}
+    div.jslm_content_data div.jslm_modal_body span.jslm_search_field input.jslm_field_style::-ms-input-placeholder{color: #797b7e;}
+    div.jslm_content_data div.jslm_modal_body span.jslm_search_field input.jslm_field_style::-moz-placeholder {color: #797b7e;}
+    div.jslm_content_data div#selectpaymentmethod div.jslm_modal_header button.jslm_close_button_style{color: #e43039}
+    div.jslm_content_data div.jslm_modal_body div.jslm-payment-wrp a{border: 1px solid #d4d4d5}
+    div.jslm_content_data div.jslm_modal_body div.jslm-payment-wrp a:hover{border-color: #e43039;}
+    div.jslm_content_data div.jslm_modal_body span.jslm_search_field span.jslm_save_button {border-top: 1px solid #e43039;}
+    div.jslm_content_data div.jslm_modal_body span.jslm_search_field span.jslm_save_button input.jslm_save_button_style{background-color: #fafafa;font-weight: 600;border:1px solid #d4d4d5;color: #797b7e;}
+    div.jslm_content_data div.jslm_modal_body span.jslm_search_field span.jslm_save_button input.jslm_save_button_style.jslm_saveNclose{border-color: #e43039;background-color: #e43039;color: #fff;}
+    div.jslm_content_data div.jslm_modal_body div.jslm_payment_plan_description h5.jslm_payment_plan_desc{border: 1px solid #e43039;color: #797b7e;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_modal_body div.jslm_payment_plan_description h5.jslm_payment_plan_desc span.jslm_payment_plan_percentage{color: #e43039;}
+    div.jslm_content_data div.jslm_error_message_wrapper a.error_btn{border: 1px solid #e43039;background-color: #e43039;color: #fff;}
+    div.jslm_content_data div.jslm_error_message_wrapper a.error_btn.err_register_btn{border: 1px solid #d4d4d5;background-color: #fafafa;color: #797b7e !important;}
+    /* Login form placeholder */
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_left div.jslm_input_field input::-webkit-input-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_left div.jslm_input_field input::-moz-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_left div.jslm_input_field input::-ms-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_left div.jslm_input_field input::placeholder {color:#797b7e;}
+    /*header */
+    div#jslearnmanager-header-main-wrapper nav{background-color: #4d4d4d;}
+    div#jslearnmanager-header-main-wrapper nav ul li{}
+    div#jslearnmanager-header-main-wrapper nav ul li a{color:#fff;border-right: 1px solid #252525;}
+    div#jslearnmanager-header-main-wrapper nav ul li:hover{background-color: #e43039;border-color: #e43039;}
+    div#jslearnmanager-header-main-wrapper nav ul li a.active,
+    div#jslearnmanager-header-main-wrapper nav ul li:hover a{border-color: #e43039;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_title div.jslm_left_data h3.jslm_title_heading{color: #4d4d4d}
+    /* course list 2 coulmns */
+    div#jslearnmanager-header-main-wrapper nav{border-bottom: 5px solid #e43039;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_title{border-bottom: 2px solid #e43039;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_title div.jslm_right_data span.jslm_sorting select{border: 1px solid #d4d4d5;color: #797b7e;background: #fafafa;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_title div.jslm_right_data span.jslm_sorting a.jslm_sort_img{background-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right{border-left: 1px solid #d4d4d5;}
+    /*div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right div.jslm_right_middle{border-top: 1px solid #d4d4d5;}*/
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right_bottom{border-top: 1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right div.jslm_right_top{border-bottom:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right div.jslm_right_top div.jslm_right_top_left h4.jslm_heading_style a.jslm_course_title{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper:hover div.jslm_right div.jslm_right_top div.jslm_right_top_left h4.jslm_heading_style a.jslm_course_title{color: #e43039}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right div.jslm_right_middle div.jslm_middle_description{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right_bottom div.jslm_right_bottom_left span.jslm_logos span.jslm_logo_wrp{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_left div.jslm_left_img_wrp div.overlay div.jslm_links span.jslm_link_icon a:hover{background-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_left{}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search div.jslm_search_box div.jslm_search_box_left div.jslm_input_search_left input.jslm_input_search{border: 1px solid #d4d4d5;background-color: #fafafa;color: #797b7e;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search div.jslm_search_box div.jslm_search_box_left div.jslm_input_search_left input.jslm_input_search::-webkit-input-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search div.jslm_search_box div.jslm_search_box_left div.jslm_input_search_left input.jslm_input_search::-moz-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search div.jslm_search_box div.jslm_search_box_left div.jslm_input_search_left input.jslm_input_search::-ms-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search div.jslm_search_box div.jslm_search_box_left div.jslm_input_search_left input.jslm_input_search::placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search div.jslm_search_box div.jslm_search_box_left div.jslm_input_search_left i.fa-calendar{color: #797b7e}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search div.jslm_search_box div.jslm_search_box_left div.jslm_dropdown_wrp .select2-container--default .select2-selection--single {border-color: #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search div.jslm_search_box div.jslm_search_box_left div.jslm_dropdown_wrp .select2-container--default .select2-selection--single .select2-selection__rendered {color: #797b7e;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search div.jslm_search_box div.jslm_search_box_right div.jslm_search_btn_wrap button.jslm_search_button_style.jslm_search{background-color: #e43039;border: 1px solid #e43039}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search div.jslm_search_box div.jslm_search_box_right div.jslm_search_btn_wrap button.jslm_search_button_style.jslm_refresh{border: 1px solid #d4d4d5;color: #797b7e;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_title div.jslm_right_data span.jslm_sorting a.jslm_link,
+    div.jslm_content_data div.jslm_search_content div.jslm_top_title div.jslm_right_data span.jslm_sorting span.jslm_link{background-color: #f0f0f0;color: #4d4d4d !important;border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_title div.jslm_right_data span.jslm_sorting a.jslm_link:hover{border-color: #e43039;}
+    div.jslm_content_data div.jslm_search_content div.jslm_top_search{border-bottom: 1px solid #d4d4d5}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper:hover{border-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_left div.jslm_left_img_wrp div.overlay div.jslm_overlay_bottom div.jslm_overlay_bottom_name span.jslm_overlay_bottom_instructor a.jslm_instructor_link{color:#ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_left div.jslm_left_img_wrp div.overlay div.jslm_overlay_bottom div.jslm_overlay_bottom_name span.jslm_overlay_bottom_instructor a.jslm_instructor_link:hover{color:#e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right_bottom div.jslm_right_bottom_right div.jslm_right_bottom_price h3.jslm_heading_style{color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right div.jslm_right_top div.jslm_right_top_stars div.jslm_top_stars span.jslm_rating_number{color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right div.jslm_custom_fields_wrapper div.jslm_custom_field span.jslm_heading{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_right div.jslm_custom_fields_wrapper div.jslm_custom_field span.jslm_text{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_left div.jslm_left_img_wrp div.overlay div.jslm_overlay_bottom div.jslm_overlay_bottom_img{border:1px solid #ffffff;}
+    /*course detail*/
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_middle_potion{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_middle_potion div.jslm_middle_bottom{border-top: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_middle_potion{background-color: #fafafa;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper ul.nav-tabs{border-bottom: 1px solid #e43039;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper ul li.jslm_li_border{background-color: #fafafa;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper ul li.jslm_li_border.active{background-color: #e43039;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper ul li.jslm_li_border a.jslm_li_anchor_styling{border: 1px solid #d4d4d5;color: #797b7e}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper ul li.jslm_li_border a.jslm_li_anchor_styling.jslm_left_border{border-left: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper ul li.jslm_li_border.active a.jslm_li_anchor_styling{color: #ffffff;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_home_data_wrapper div.jslm_home_data_row div.jslm_row_body_text{color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_home_data_wrapper div.jslm_home_data_row div.jslm_row_heading h3.jslm_row_heading_style,
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_members_wrapper div.jslm_home_data_row div.jslm_row_heading h3.jslm_row_heading_style,
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_reviews_title div.jslm_row_heading h3.jslm_row_heading_style,
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_curriculum_title div.jslm_row_heading h3.jslm_row_heading_style{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content span.jslm_social_links{border:1px solid transparent;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_home_data_wrapper div.jslm_home_data_row div.jslm_custom_fields_wrapper{border-top: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_home_data_wrapper div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field{border-bottom: 1px solid #d4d4d5;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field span.jslm_heading {color: #4d4d4d;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field span.jslm_text {color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_social_wrapper span.jslm_text{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_home_data_wrapper div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field span.jslm_heading{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_home_data_wrapper div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field span.jslm_text{color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_home_data_wrapper div.jslm_home_data_row div.jslm_row_heading span.jslm_row_body_text{color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_members_wrapper div.jslm_member_data{border: 1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_members_wrapper div.jslm_member_data div.jslm_left_side div.jslm_img_wrapper img{}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_reviews_top_wrapper{border:1px solid #d4d4d5;background: #fafafa;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_reviews_top_wrapper div.jslm_reviews_left div.jslm_square_box span.jslm_bold_text{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_reviews_top_wrapper div.jslm_reviews_left div.jslm_square_box{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_reviews_top_wrapper div.jslm_reviews_right div.jslm_reviews_right_data span.jslm_progress_bar{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_reviews_top_wrapper div.jslm_reviews_right div.jslm_reviews_right_data span.jslm_progress_bar span.jslm_progress_bar_percent{background-color: #e43039;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_reviews_title div.jslm_review_desc{color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_comments_wrapper{border:1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_comments_wrapper div.jslm_left_side div.jslm_img_wrapper img{}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_comments_wrapper div.jslm_right_side div.jslm_top span.jslm_top_left{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_comments_wrapper div.jslm_right_side div.jslm_bottom{color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper a.jslm_show_more{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper a.jslm_show_more:hover{border-color: #e43039}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm-panel-heading{background-color: #fafafa;border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm-panel-heading:hover{border-color:#e43039;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm-panel-heading div.jslm_edit_section_left h6.jslm_section_heading a i{border:1px solid #d4d4d5;color: #4d4d4d;background-color: #ffffff;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm-panel-heading div.jslm_edit_section_left h6.jslm_section_heading a{color: #4d4d4d}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_container_style{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_container_style div.jslm_edit_row_style{border:1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_container_style div.jslm_edit_row_style:hover{border-color: #e43039;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm-panel-heading.active div.jslm_edit_section_left h6.jslm_section_heading a,
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm-panel-heading.active div.jslm_edit_section_left h6.jslm_section_heading a i{background-color: #e43039;color: #fff;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm_container_style div.jslm_edit_row_style a.jslm_edit_lec_anchor{color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm_container_style div.jslm_edit_row_style span.jslm_edit_section_action i{border:1px solid #d4d4d5;color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm_container_style div.jslm_edit_row_style span.jslm_edit_section_action a:hover{color: #ffffff; background-color: #e43039;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm_container_style div.jslm_edit_row_style span.jslm_edit_section_action a:hover i{color: #ffffff;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_leave_comments h3{color: #4d4d4d}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_leave_comments span.jslm_warning_msg{color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_leave_comments div.jslm_form_wrapper span.jslm_title{color: #4d4d4d}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_leave_comments div.jslm_form_wrapper span.jslm_button button.jslm_post_comment_btn{background-color: #e43039;color: #ffffff}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.alert{border: 1px solid #d4d4d5;background-color: #fafafa;color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper{border: 1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_left h2.jslm_login_heading{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_left div.jslm_input_field input{border-color: #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_left a.jslm_forgot_password{color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_left div.jslm_login_button input{background-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_right{border-left: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_right div.jslm_social_login_top div.jslm_social_title h2.jslm_or_text{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_right div.jslm_social_login_bottom div.jslm_social_login_icons{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_right div.jslm_social_login_bottom div.jslm_social_login_icons a div.jslm_login_text{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_btn_row{border-top:2px solid #e43039;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_top_wrapper div.jslm_left_wrap div.jslm_title span.jslm_title{color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_middle_potion div.jslm_middle_top div.jslm_logo_wrp,
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_middle_potion div.jslm_middle_top span.jslm_logo_wrp{color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_middle_potion div.jslm_middle_top div.jslm_logo_wrp div.jslm_detail_title a{color: #e43039;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_middle_potion div.jslm_append_border {background: #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_top_wrapper div.jslm_right_wrap div.jslm_enroll_btn_wrap div.jslm_price_btn h2{color: #ffffff;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_top_wrapper div.jslm_right_wrap div.jslm_enroll_btn_wrap div.jslm_price_btn h3.jslm_discountclass{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_top_wrapper div.jslm_right_wrap div.jslm_enroll_btn_wrap div.jslm_price_btn h3.jslm_free{color:#ffffff;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_img_wrapper{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_top_wrapper div.jslm_left_wrap div.jslm_title h2{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_home_data_wrapper div.jslm_home_data_row,
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_members_wrapper div.jslm_home_data_row{color: #797b7e}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_members_wrapper div.jslm_member_data div.jslm_right_side span.jslm_text2.jslm_text1{color: #4d4d4d}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_members_wrapper div.jslm_member_data div.jslm_right_side span.jslm_text2{color: #797b7e}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_top_wrapper div.jslm_right_wrap div.jslm_enroll_btn_wrap div.jslm_enroll_course_btn a,
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_top_wrapper div.jslm_right_wrap div.jslm_enroll_btn_wrap div.jslm_price_btn a{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_top_wrapper div.jslm_right_wrap div.jslm_enroll_btn_wrap div.jslm_price_btn h3.jslm_discount_color{color: #ffffff;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_middle_potion div.jslm_middle_top div.jslm_logo_wrp div.jslm_detail_img_wrap{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_modal_body div.jslm_payment_heading span.jslm_heading{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_modal_body div.jslm_payment_heading span.jslm_sub_title{color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_top_wrapper div.jslm_right_wrap div.jslm_enroll_btn_wrap div.jslm_enroll_course_btn h3.jslm-drop{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_top_wrapper div.jslm_right_wrap div.jslm_enroll_btn_wrap div.jslm_top_enrolled h3.jslm_take_course{background: #e43039;}
+    /* Course search */
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_button_wrp{border-top: 2px solid #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_button_wrp input.jslm_save_button{background-color: #f0f0f0;color: #4d4d4d;border: 1px solid #d4d4d5;}
+    /* Add course*/
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_title{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_upload_image div.jslm_file_upload label.jslm_file_upload_label{background-color: #e43039;border: 1px solid #d4d4d5;color: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_upload_image span.jslm_image_name{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_upload_image span.jslm_image_name a.jslm_delete_image{color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_upload_image span.jslm_file_extension{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field input,
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_input_field div.jslm_input input{border-color: #d4d4d5;background-color: #fafafa;color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field input::-webkit-input-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field input::-moz-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field input::-ms-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field input::placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field select,
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_input_field div.jslm_input select{background-color: #fafafa;color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_btn_row button.jslm_btn_style{background-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_btn_row a.jslm_btn_style.jslm_btn_cancel{background-color: #fafafa;border:1px solid #d4d4d5;color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field div.jslm_price_field.jslm_checkbox_style{border:1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field a.jslm_delete_file{color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field input.jslm_padding_upl_file{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field div.jslm_checkbox_cf label,
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field div.jslm_checkbox_cf div.jslm_checkbox_label,
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field div.jslm_checkbox_cf label{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addcourse_wrapper div.jslm_form_wrapper div.jslm_row div.jslm_input_field div#jslms_cust_file_ext{color: #797b7e;}
+    div.jslm_row div.jslm_input_field .select2.select2-container.select2-container--default .selection .select2-selection.select2-selection--multiple{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_has-success label{color: #e43039;}
+    /* Dashboard */
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper{border: 1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_profile_heading,
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profile_heading{border:1px solid #d4d4d5;background-color: #E6E7E8;color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_probileleft_middle{background-color: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_profileleft_middle,
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle{background-color: #fff;border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_myprofile_image div.jslm_image_wrapper {border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_profileleft_middle span.jslm_title{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_profileleft_middle span.jslm_title.jslm_name{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_links_list ul.jslm_usefullinks{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_links_list ul.jslm_usefullinks li.jslm_links{border-bottom: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_links_list ul.jslm_usefullinks li.jslm_links a {color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_links_list ul.jslm_usefullinks li.jslm_links a:hover{color: #e43039}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle ul.nav-tabs li.jslm_li_styling{border: 1px solid #d4d4d5}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle ul.nav-tabs li.jslm_li_styling a.jslm_anchor_style{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle ul.nav-tabs{border-bottom: 2px solid  #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_top_heading,
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_top_heading{background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_top_heading span.jslm_heading_left_name,
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_top_heading span.jslm_heading_right_category,
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_top_heading span.jslm_list_title{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_bottom_list span.jslm_heading_right_category,
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_bottom_list span.jslm_reward_data,
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_payout_data_list div.jslm_row span.jslm_quiz_title{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_bottom_list{border-top: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_earning_graph{border: 1px solid #d4d4d5}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_earning_graph_warpper{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_earning_graph_warpper div.jslm_earning_top{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_earning_graph_warpper div.jslm_earning_top div.jslm_grap_top_content span.jslm_content_data:first-child i{color: #FFC300;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_earning_graph_warpper div.jslm_earning_top div.jslm_grap_top_content span.jslm_content_data i{color: #038edd;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_earning_graph_warpper div.jslm_earning_bottom div.jslm_earning_bottom_content_data{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_earning_graph_warpper div.jslm_earning_bottom div.jslm_earning_bottom_content_data span.jslm_revenue_data{border-right: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_earning_graph_warpper div.jslm_earning_bottom div.jslm_earning_bottom_content_data span.jslm_text{color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_top_heading span.jslm_list_title{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_top_heading{border-bottom: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_payout_data_list div.jslm_row{border-bottom: 1px solid #d4d4d5;color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_payout_data_list div.jslm_row div.jslm_date_name_wrp span.jslm_date{border: 1px solid #d4d4d5;background-color: #fafafa;color: #4d4d4d}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_payout_data_list div.jslm_row div.jslm_course_approve_wrp span.jslm_status{border: 1px solid #d4d4d5;color: #797b7e;color: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_payout_data_list div.jslm_row div.jslm_course_approve_wrp span.jslm_course_name a{color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_payout_data_list div.jslm_row div.jslm_course_approve_wrp span.jslm_course_name a:hover{color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_payout_data_list div.jslm_row div.jslm_price{color: #4d4d4d}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_curriculum_title div.jslm_add_new_btn button{border: 1px solid #e43039;background-color: #fafafa;color: #4d4d4d}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_curriculum_title div.jslm_add_new_btn button:hover{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle ul.nav-tabs li.jslm_li_styling.active{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_bottom_list span.jslm_heading_left_name a,
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_bottom_list span.jslm_list_title a{color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle ul.nav-tabs a.jslm_view_all{background-color: #f0f0f0;border:1px solid #d4d4d5;color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle ul.nav-tabs a.jslm_view_all:hover{color: #ffffff;background-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_left_wrp div.jslm_myprofile div.jslm_profileleft_middle span.jslm_edit a{color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list div.jslm_bottom_list span.jslm_list_title{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_payout_data_list div.jslm_row span.jslm_student_name{color: #797b7e;}
+
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list table.jslm-table tr.jslm-table-row,
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list table.jslm-table tr.jslm-table-row{border-bottom: 1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list table.jslm-table tbody tr.jslm-table-row:last-child{border-bottom: none;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list table.jslm-table tr.jslm-table-row th.jslm-table-row-heading,
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list table.jslm-table tbody tr.jslm-table-row:last-child {border-bottom: none;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list table.jslm-table tr.jslm-table-row th.jslm-table-row-heading{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list table.jslm-table tr.jslm-table-row th.jslm-table-row-heading{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list table.jslm-table tbody.jslm-table-body td.jslm-table-data,
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list table.jslm-table tbody.jslm-table-body tr.jslm-table-row td.jslm-table-data{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list table.jslm-table tbody.jslm-table-body td.jslm-table-data a,
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_payout_container div.jslm_payout_data_list div.jslm_row div.jslm_date_name_wrp span.jslm_student_name a{color:#e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list table.jslm-table tbody.jslm-table-body  tr.jslm-table-row td.jslm-table-data a{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_dashboard_wrapper div.jslm_dashboard_right_wrp div.jslm_myprofile div.jslm_profileleft_middle div.jslm_dashboard_course_list table.jslm-table tbody.jslm-table-body td.jslm-table-data::before {color: #4d4d4d;}
+    /*profile/register*/
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_left_data{background-color:#fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_left_data div.jslm_file_upload label.jslm_file_upload_label{border: 1px solid #d4d4d5;background-color: #e43039;color: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_left_data div.jslm_img_wrapper{background-color: #ffffff;border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_left_data span.jslm_text{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_left_data span.jslm_text a.jslm_delete_image_user{color: #e43039}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_title{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field input.jslm_input_style,
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field_select select.jslm_input_style{background-color: #fafafa;border: 1px solid #d4d4d5;color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field input.jslm_input_style::-webkit-input-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field input.jslm_input_style::-moz-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field input.jslm_input_style::-ms-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field input.jslm_input_style::placeholder {color:#797b7e;}
+
+
+
+
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field select.jslm_select_style::-webkit-input-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field select.jslm_select_style::-moz-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field select.jslm_select_style::-ms-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field select.jslm_select_style::placeholder {color:#797b7e;}
+
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field div.jslm_checkbox_cf div.jslm_checkbox_label{color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_right_data div.jslm_input_wrapper div.jslm_input_field select{background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_bottom_button{border-top: 3px solid #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_bottom_button input.jslm_button{background-color: #e43039;border:1px solid #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_bottom_button input.jslm_button.jslm_cancel,
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_bottom_button a.jslm_button.jslm_cancel{background-color: #f0f0f0;color: #4d4d4d;border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_register_wrapper div.jslm_bottom_button a input.jslm_button.jslm_cancel{border:1px solid #d4d4d5;background-color: #fafafa;color: #797b7e;}
+    /* profile detail */
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_left_data div.jslm_img_wrapper,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_left_data div.jslm_img_wrapper{border: 1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_left_data a.jslm_send_message_anchor,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_left_data a.jslm_send_message_anchor,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_left_data div.jslm_send_message_wrapper span.jslm_approve_status,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_left_data div.jslm_send_message_wrapper span.jslm_approve_status{background-color: #e43039;color: #fff;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_left_data div.jslm_social_icons a.jslm_social.jslm_facebook,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_left_data div.jslm_social_icons a.jslm_social.jslm_facebook{background-color: #3b5998;box-shadow: 0 4px 0 #2f4a84 !important;color: #fff;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_left_data div.jslm_social_icons a.jslm_social.jslm_twitter,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_left_data div.jslm_social_icons a.jslm_social.jslm_twitter{background-color: #29c5f6;box-shadow: 0 3px 0 #0ca2d1 !important;color: #fff;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_left_data div.jslm_social_icons a.jslm_social.jslm_linkedin,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_left_data div.jslm_social_icons a.jslm_social.jslm_linkedin{background-color: #006cbf;box-shadow: 0 3px 0 #1a5aa4 !important;color: #fff;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_top_heading div.jslm_heading .jslm_heading_title,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_top_heading div.jslm_heading .jslm_heading_title{color: #4d4d4d;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_top_heading div.jslm_heading span.jslm_label,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_top_heading div.jslm_heading span.jslm_label{background-color: #3E4095;color: #fff;border: 1px solid #d4d4d5;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_top_heading div.jslm_info .jslm_icons,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_top_heading div.jslm_info .jslm_icons{color: #797b7e;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_top_heading div.jslm_info .jslm_icons:first-child{color: #e43039;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_top_heading div.jslm_info .jslm_icons:first-child {color: #e43039;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_top_heading div.jslm_info .jslm_icons:first-child i,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_top_heading div.jslm_info .jslm_icons:first-child i{color: #797b7e;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_middle_content span.jslm_text,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_middle_content span.jslm_text{color: #797b7e;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_bottom_content span.jslm_logo,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_bottom_content span.jslm_logo{background-color: #fafafa;border:1px solid #d4d4d5;color: #4d4d4d}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_bottom_content span.jslm_logo span.jslm_right span.jslm_bc_text,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_bottom_content span.jslm_logo span.jslm_right span.jslm_bc_text,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_instructor_wrapper div.jslm_right_data div.jslm_bottom_content span.jslm_logo span.jslm_right span.jslm_number,
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_bottom_content span.jslm_logo span.jslm_right span.jslm_number{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earn_bottom_revenue div.jslm_revenue_wrapper span.jslm_number.jslm_payout_yellow{color: #808000;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field span.jslm_heading{color: #4d4d4d;}
+    div.jslm_content_wrapper div.jslm_content_data div.jslm_student_wrapper div.jslm_right_data div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field span.jslm_text{color: #797b7e;}
+    /* Earning */
+    div.jslm_content_data div.jslm_data_container div.jslm_graph_view div.jslm_graph_wrap{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_graph_view div.jslm_graph_wrap div.jslm_graph_view_top{background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earn_bottom_revenue div.jslm_revenue_wrapper,
+    div.jslm_content_data div.jslm_data_container div.jslm_earn_bottom_revenue div.jslm_payout_wrapper{border: 1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earn_bottom_revenue div.jslm_revenue_wrapper span.jslm_gross,
+    div.jslm_content_data div.jslm_data_container div.jslm_earn_bottom_revenue div.jslm_payout_wrapper span.jslm_gross{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list div.jslm_earning_list_top_heading{background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list div.jslm_earning_list_top_heading span.jslm_title{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list div.jslm_earning_list_bottom_data div.jslm_payout_row span.jslm_title{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list div.jslm_earning_list_bottom_data div.jslm_payout_row span.jslm_title a{color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_earning_list div.jslm_earning_list_bottom_data div.jslm_payout_row{border-top: 1px solid #d4d4d5;}
+    /* Add lecture */
+    div.jslm_content_data div.jslm_data_container div.jslm_top_content_data{border:1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_top_content_data div.jslm_title_content h4.jslm_title_heading a.jslm_course_title{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_top_content_data div.jslm_title_content span.jslm_title_category{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_input_field div.jslm_input_title {color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper h6.jslm_heading{color: #4d4d4d}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper div.jslm_file_upload label.jslm_file_upload_label{background-color: #fafafa;border:1px solid #d4d4d5;color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper span.jslm_file_extension{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_append_files div.jslm_heading_wrp h6.jslm_heading{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_append_files div.jslm_upload_files_wrapper input.jslm_input_field_style{border: 1px solid #d4d4d5;background: #fafafa}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list{/*border-bottom: 1px solid #d4d4d5;*/}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_heading_wrp h6.jslm_heading{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_row{border:1px solid #d4d4d5;background-color: #fafafa;color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_row span.jslm_right span.jslm_logo{border: 1px solid #d4d4d5;background: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_row span.jslm_right span.jslm_logo:hover{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_row span.jslm_right span.jslm_logo:hover a.jslm_logos i{color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_append_files div.jslm_upload_files_wrapper button.jslm_delete_button{background-color: #ffffff;color: #797b7e;border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_append_files div.jslm_upload_files_wrapper button.jslm_delete_button:hover{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper input.jslm_video_title,
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper input.jslm_video_url{border: 1px solid #d4d4d5;background-color: #fafafa;border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper div.jslm_save_button button.jslm_btn_style{border: 1px solid #e43039;color: #fff;background-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_row span.jslm_video_left span.jslm_right_data span.jslm_video_url a.jslm_video_url_link{color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_append_files div.jslm_upload_video_files_wrapper button.jslm_delete_button{background-color: #ffffff;color: red;border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_append_files div.jslm_upload_video_files_wrapper button.jslm_delete_button:hover{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_append_files div.jslm_upload_video_files_wrapper input.jslm_input_video_title,
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_append_files div.jslm_upload_video_files_wrapper input.jslm_input_video_url,
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_content div.jslm_quiz_heading input.jslm_ques_input_style,
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_content div.jslm_quiz_body div.jslm_row_data div.jslm_choice div.jslm_quiz_input_wrapper input.jslm_input_style{border-color: #d4d4d5;background-color: #fafafa;color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_content div.jslm_quiz_body div.jslm_add_more_button button.jslm_add_more_button_styling{border: 1px solid #d4d4d5;color: #797b7e;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_content div.jslm_quiz_body div.jslm_button_style button{border:1px solid #e43039;background-color: #e43039;color: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_quiz_wrapper div.jslm_heading span.jslm_right_option span.jslm_logo{border: 1px solid #d4d4d5;color: #797b7e;background: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_quiz_wrapper div.jslm_heading span.jslm_right_option span.jslm_logo:hover{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_quiz_wrapper div.jslm_heading span.jslm_right_option span.jslm_logo:hover a i{color: #ffffff}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_quiz_wrapper{border:1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_img_list div.jslm_quiz_wrapper div.jslm_heading div.jslm_left_heading h5{color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_save_button{border-top: 2px solid #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_save_button button.jslm_btn_style{background-color: #e43039;color: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_save_button button.jslm_btn_style.jslm_save_new{background-color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_save_button button.jslm_btn_style.jslm_cancel{background-color: #fafafa;color: #797b7e;border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_heading_wrp{border-top: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper span.jslm_delete a.jslm_delete_button i{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_body div.jslm_row_data div.jslm_choice{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_body div.jslm_row_data div.jslm_choice div.jslm_quiz_input_wrapper + span.jslm_delete {border-left: 1px solid #d4d4d5 !important;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_heading input {border: 1px solid #d4d4d5;background: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div#new_upload_questions div.jslm_quiz_wrapper div.jslm_heading_width + span.jslm_delete a.jslm_delete_button {border: 1px solid #d4d4d5;border-left: none;background: #ffffff;color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_input_field div.jslm_input input.jslm_input_field_style::-webkit-input-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_input_field div.jslm_input input.jslm_input_field_style::-moz-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_input_field div.jslm_input input.jslm_input_field_style::-ms-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_input_field div.jslm_input input.jslm_input_field_style::placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper input.jslm_video_url::-webkit-input-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper input.jslm_video_url::-moz-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper input.jslm_video_url::-ms-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper input.jslm_video_url::placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper input.jslm_video_title::-webkit-input-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper input.jslm_video_title::-moz-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper input.jslm_video_title::-ms-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_file_wrapper input.jslm_video_title::placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_content div.jslm_quiz_heading input.jslm_ques_input_style::-webkit-input-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_content div.jslm_quiz_heading input.jslm_ques_input_style::-moz-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_content div.jslm_quiz_heading input.jslm_ques_input_style::-ms-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_content div.jslm_quiz_heading input.jslm_ques_input_style::placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_body div.jslm_row_data div.jslm_choice div.jslm_quiz_input_wrapper div.jslm_input_wrp input.jslm_input_style::-webkit-input-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_body div.jslm_row_data div.jslm_choice div.jslm_quiz_input_wrapper div.jslm_input_wrp input.jslm_input_style::-moz-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_body div.jslm_row_data div.jslm_choice div.jslm_quiz_input_wrapper div.jslm_input_wrp input.jslm_input_style::-ms-placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_body div.jslm_row_data div.jslm_choice div.jslm_quiz_input_wrapper div.jslm_input_wrp input.jslm_input_style::placeholder {color:#797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_addlecture_wrapper div.jslm_form_wrapper div.jslm_file_wrapper div.jslm_quiz_wrapper div.jslm_quiz_content div.jslm_quiz_body div.jslm_row_data div.jslm_choice div.jslm_quiz_input_wrapper div.jslm_checkbox_wrp{border-right: 1px solid #00a659;}
+    /* Message */
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_top{border-bottom: 1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_top div.jslm_top_left span.jslm_text{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_top div.jslm_top_right span.jslm_box_alert{border: 1px solid #fafafa;background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_top div.jslm_top_right span.jslm_msg_box{border:1px solid #d4d4d5;color: #4d4d4d;background-color: #ffffff;color: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_top div.jslm_top_right span.jslm_date{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_top div.jslm_top_right span.jslm_msg_box:hover{background-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_top div.jslm_top_right span.jslm_msg_box:hover span.jslm_msg_box_inner a{color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_top div.jslm_top_right span.jslm_msg_box span.jslm_msg_box_inner a{color: #4d4d4d}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_top div.jslm_top_left div.jslm_img_wrapper {border:1px solid #d4d4d5;background: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_bottom span.jslm_bottom_text{color: #4d4d4d}
+    div.jslm_content_data div.jslm_data_container div.jslm_form_container div.jslm_button_container button{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_history_container div.jslm_history_wrapper div.jslm_row{border:1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_history_container div.jslm_history_wrapper div.jslm_row div.jslm_left_side div.jslm_img_wrapper{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_history_container div.jslm_history_wrapper div.jslm_row div.jslm_right_side div.jslm_bottom_row span.jslm_text{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_history_container div.jslm_history_wrapper div.jslm_row div.jslm_right_side div.jslm_top_row span.jslm_sender_label.jslm_green{background-color: #e43039;color: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_history_container div.jslm_history_wrapper div.jslm_row div.jslm_right_side div.jslm_top_row span.jslm_sender_label.jslm_white{background-color: #ffffff;color: #797b7e;border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_history_container div.jslm_history_wrapper div.jslm_row div.jslm_right_side div.jslm_top_row span.jslm_date{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_bottom_message{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_history_container div.jslm_history_wrapper div.jslm_row.jslm_gray_bg{background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_history_container div.jslm_history_wrapper div.jslm_row.jslm_white_bg{background-color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_history_container div.jslm_history_wrapper div.jslm_row:last-child{border-bottom: 1px solid #d4d4d5;}
+
+    /* register */
+    div.jslm_content_data div.jslm_register_wrapper div.jslm_register_student div.jslm_register_as_a_student div.jslm_title .jslm_title_heading,
+    div.jslm_content_data div.jslm_register_wrapper div.jslm_register_instructor div.jslm_register_as_a_instructor div.jslm_title .jslm_title_heading{color: #e43039}
+    div.jslm_content_data div.jslm_register_wrapper div.jslm_register_student div.jslm_register_as_a_student div.jslm_text,
+    div.jslm_content_data div.jslm_register_wrapper div.jslm_register_instructor div.jslm_register_as_a_instructor div.jslm_text{color: #797b7e}
+    div.jslm_content_data div.jslm_top_heading h1.jslm_heading_styling{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_top_heading span.jslm_intructor_register_text{color:#797b7e;}
+    div.jslm_content_data div.jslm_nav_tab_wrapper ul.nav-tabs.jslm_ul_styling{border:1px solid #d4d4d5;background-color: #fafafa;color: #797b7e}
+    div.jslm_content_data div.jslm_nav_tab_wrapper ul.nav-tabs.jslm_ul_styling li.jslm_li_styling_reg{border-right: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_nav_tab_wrapper ul.nav-tabs.jslm_ul_styling li.jslm_li_styling_reg:last-child{border-right: unset;}
+    div.jslm_content_data div.jslm_nav_tab_wrapper ul.nav-tabs.jslm_ul_styling li.jslm_li_styling_reg a.jslm_anchor_style{color: #797b7e}
+    div.jslm_content_data div.jslm_tab_content_reg span.jslm_text{color: #797b7e;}
+    div.jslm_content_data div.jslm_nav_tab_wrapper{border-bottom: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_register_wrapper div.jslm_register_student div.jslm_register_as_a_student,
+    div.jslm_content_data div.jslm_register_wrapper div.jslm_register_instructor div.jslm_register_as_a_instructor{background-color: #fafafa;border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_register_wrapper div.jslm_register_student a.jslm_register_anchor:hover ,
+    div.jslm_content_data div.jslm_register_wrapper div.jslm_register_instructor a.jslm_register_anchor:hover {border-color: #e43039;}
+    /* Lecture View */
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_left_section_list{border: 1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_left_section_list div.jslm_accordian_wrp div.jslm-panel-group div.jslm_panel_style{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_left_section_list div.jslm_accordian_wrp div.jslm-panel-group div.jslm_panel_style div.panel-heading div.jslm_panel_title div.jslm_edit_section_wrapper h5.jslm_section_heading{color: #4d4d4d;border-bottom: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_left_section_list div.jslm_accordian_wrp div.jslm-panel-group div.jslm_panel_style div.panel-collapse div.jslm_lecture_panel_style div.jslm_panel_body_wrapper div.jslm_row_data{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_left_section_list div.jslm_accordian_wrp div.jslm-panel-group div.jslm_panel_style div.panel-collapse div.jslm_lecture_panel_style div.jslm_panel_body_wrapper div.jslm_row_data a.jslm_view_section_anchor span.jslm_title{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_left_section_list div.jslm_accordian_wrp div.jslm-panel-group div.jslm_panel_style div.panel-collapse div.jslm_lecture_panel_style div.jslm_panel_body_wrapper div.jslm_row_data:hover{border-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_left_section_list div.jslm_accordian_wrp div.jslm-panel-group div.jslm_panel_style div.panel-collapse div.jslm_lecture_panel_style div.jslm_panel_body_wrapper div.jslm_row_data.jslm_border_color_primary{border-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_lecture_heading{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper ul.jslm_modal_ul{border-bottom: 2px solid #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper ul.jslm_modal_ul li.jslm_modal_li{border: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper ul.jslm_modal_ul li.jslm_modal_li.active{background-color: #e43039; color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper ul.jslm_modal_ul li.jslm_modal_li.active a.jslm_modal_anchor{color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper ul.jslm_modal_ul li.jslm_modal_li:first-child{border-left: 1px solid #d4d4d5}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_middle_content div.jslm_heading h4.jslm_heading_style,
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_custom_fields_wrapper div.jslm_custom_fields_heading h4.jslm_heading_style{color: #4d4d4d;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_middle_content div.jslm_description{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm-iframe{border: 1px solid #d4d4d5;background-color: #fafafa;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm-iframe a i{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_download_all a{background-color: #f0f0f0;color: #4d4d4d;border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_download_all a:hover{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_bottom_actions_button {border-top: 1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_bottom_actions_button div.jslm_left_button a.jslm_back,
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_bottom_actions_button div.jslm_right_button a.jslm_next{border:1px solid #d4d4d5;background-color: #fafafa;color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_files_content_data{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_files_content_data span.jslm_left_data i,
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_files_content_data span.jslm_left_data a{color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_files_content_data span.jslm_right_anchor a.jslm_actions{border:1px solid #d4d4d5;color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_files_content_data span.jslm_right_anchor a.jslm_actions:hover{background-color: #e43039;color: #ffffff}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_top_content h2.jslm_heading_style{color: #4d4d4d}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_top_content h2.jslm_heading_style span.jslm_color{color: #e43039}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_middle_content div.jslm_answer span.jslm_cirle_answer{border:1px solid #e43039;color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_middle_content div.jslm_answer span.jslm_cirle_answer:nth-child(2){border-color: #f00;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_middle_content div.jslm_answer span.jslm_cirle_answer:nth-child(3){border-color: #789;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_middle_content div.jslm_answer span.jslm_cirle_answer:nth-child(4){border-color: #038edd;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_middle_content div.jslm_answer span.jslm_cirle_answer span.jslm_marks{color: #797b7e;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_middle_content div.jslm_answer span.jslm_cirle_answer:nth-child(2) span.jslm_marks{color: #f00;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_middle_content div.jslm_answer span.jslm_cirle_answer:nth-child(3) span.jslm_marks{color: #789;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_middle_content div.jslm_answer span.jslm_cirle_answer:nth-child(4) span.jslm_marks{color: #038edd;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_middle_content div.jslm_remarks{color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_custom_fields_wrapper{border-top:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_custom_fields_wrapper div.jslm_custom_field span.jslm_heading{color: #4d4d4d}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_custom_fields_wrapper div.jslm_custom_field span.jslm_text{color: #797b7e}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_result_content div.jslm_result_bottom_content div.jslm_retake_button_wrapper a.jslm_retake_button{border: 1px solid #d4d4d5;background-color: #e43039;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper ul.jslm_modal_ul li.jslm_modal_li a.jslm_modal_anchor{color: #4d4d4d}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_container div.jslm_question_top_content{border:1px solid #d4d4d5;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_container div.jslm_question_bottom_content div.jslm_mscq_wrapper{border:1px solid #d4d4d5;background-color: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_container div.jslm_question_bottom_content div.jslm_button a.jslm_next_button_anchor{border:1px solid #d4d4d5;background-color: #e43039;color: #fff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_container div.jslm_question_bottom_content div.jslm_button a.jslm_previous_button_anchor,
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper div.tab-content div.jslm_lecture_content_wrapper div.jslm_quiz_container div.jslm_question_bottom_content div.jslm_button button.jslm_next_button_anchor{border:1px solid #d4d4d5;background-color: #fafafa;color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm-panel-heading div.jslm_edit_section_right span.jslm_section_action a.jslm_delete_sec,
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm-panel-heading div.jslm_edit_section_right span.jslm_section_action i.more-less{border:1px solid #d4d4d5;background-color: #ffffff;color: #797b7e;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm-panel-heading div.jslm_edit_section_right span.jslm_section_action a.jslm_delete_sec:hover{background-color: #e43039;color: #ffffff}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm-panel-heading div.jslm_edit_section_right span.jslm_section_action a.jslm_new_sec{border:1px solid #d4d4d5;background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_curriculum_wrapper div.jslm_panel_group div.jslm_panel_single_group div.jslm-panel-heading div.jslm_edit_section_right span.jslm_section_action a.jslm_new_sec:hover{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_left_section_list div.jslm_accordian_wrp div.jslm-panel-group div.jslm_panel_style div.panel-heading div.jslm_panel_title div.jslm_edit_section_wrapper h5.jslm_section_heading a.jslm_section_title:hover{background-color: #e43039;color: #ffffff;}
+    div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_close_btn button.jslm-section-panel-btn{background-color: #fafafa;color: red;border: 1px solid #d4d4d5;}
+    /* vbox */
+    .vbox-close{color: #e43039 !important;background-color: #ffffff !important;}
+    /* paginatnion */
+    div#jslearnmanager-pagination span.jslm_page-numbers.jslm_current{color:#4d4d4d;}
+    div#jslearnmanager-pagination a.page-numbers.next{background:#4d4d4d;color:#ffffff;}
+    div#jslearnmanager-pagination a.page-numbers.prev{background:#4d4d4d;color:#ffffff;}
+
+    /* breadcrumbs */
+    div#jslms_breadcrumbs_parent div.home{background-color:#e43039;}
+    div#jslms-header-main-wrapper{background:#4d4d4d;border-bottom:5px solid #e43039;box-shadow: 0px 4px 1px #d4d4d5;}
+    div#jslms-header-main-wrapper a.headerlinks{color:#ffffff;}
+    div#jslms-header-main-wrapper a.headerlinks:hover{background:#e43039;color:#ffffff;}
+
+    /* Theme css */
+    div#jslearnmanagers-wrapper div.my-course-data div.data-bigupper div.big-upper-upper{border-bottom:1px solid #d4d4d5;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-bigupper span.title {color:#3c3435;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-bigupper div.big-upper-upper a{color: #4d4d4d;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-bigupper div.big-upper-upper div.headingtext{color:#e43039;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-bigupper span.bigupper-jobtotal {color:#797b7e;background-color:#fafafa;border:1px solid #d4d4d5;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-big-lower {background-color:#fafafa;border-top:1px solid #d4d4d5;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-big-lower img.big-lower-img {background-color:#fafafa;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-bigupper a{color:#4d4d4d;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-bigupper div.big-upper-upper span.title{color:#3c3435;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-big-lower div.big-lower-data-icons img.icon-img {border:1px solid #d4d4d5;background-color:#f0f0f0;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-big-lower div.big-lower-data-icons span.icon-text-box{border:1px solid #d4d4d5;background-color:#f0f0f0;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-big-lower div.big-lower-data-icons span.icons-resume{color:#ffffff; background-color:#4d4d4d; border:1px solid #d4d4d5;}
+    div#jslearnmanagers-wrapper div.my-course-data div.data-bigupper div.big-upper-upper span.buttonu {color:#797b7e;background-color:#fafafa;border:1px solid #d4d4d5;}
+
+    div.jslm_content_wrapper div.tablenav span.page-numbers.current{color:#4d4d4d;}
+    div.jslm_content_wrapper div.tablenav a.page-numbers.next{background:#4d4d4d;color:#ffffff;}
+    div.jslm_content_wrapper div.tablenav a.page-numbers.prev{background:#4d4d4d;color:#ffffff;}
+
+   /* widgets / search course widget */
+   div.jslearnmanager_search_courses_widget_wrapper #jslms-mod-heading {color: #4d4d4d;}
+    div.jslearnmanager_search_courses_widget_wrapper form.learnmanager_form div.js-mod-valwrapper div.js-form-mod-title {color: #4d4d4d;}
+    div.jslearnmanager_search_courses_widget_wrapper form.learnmanager_form div.js-mod-valwrapper div.js-form-mod-value input[type="text"] {border: 1px solid #d4d4d5;background-color: #fafafa;color: #797b7e;}
+    div.jslearnmanager_search_courses_widget_wrapper form.learnmanager_form div.js-mod-valwrapper div.js-form-mod-value select {border: 1px solid #d4d4d5;background-color: #fafafa;color: #797b7e;}
+    div.jslearnmanager_search_courses_widget_wrapper form.learnmanager_form div.js-mod-valwrapper div.bottombutton .jslm_save_button {background-color: #e43039;color: #fff;border: 1px solid #e43039;}
+    div.jslearnmanager_search_courses_widget_wrapper form.learnmanager_form div.js-mod-valwrapper div.bottombutton .jslm_save_button:hover {background-color: #fff;color: #e43039;}
+    div.jslearnmanager_search_courses_widget_wrapper form.learnmanager_form div.js-mod-valwrapper div.bottombutton .anchor {background-color: #f0f0f0;color: #4d4d4d;border: 1px solid #d4d4d5;}
+    div.jslearnmanager_search_courses_widget_wrapper form.learnmanager_form div.js-mod-valwrapper div.bottombutton .anchor:hover {background-color: #fff;}
+
+   /* widgets / featured course widget */
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_top div.jslearnmanager_courses_widget_title {color: #4d4d4d;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_top div.jslearnmanager_courses_widget_desc {color: #797b7e;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_data_wrapper div.jslm_data_wrapper {border:1px solid #d4d4d5;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_data_wrapper div.jslm_data_wrapper:hover {border-color:#e43039;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_data_wrapper div.jslm_data_wrapper div.jslm_left div.jslm_left_img_wrp div.overlay div.jslm_links span.jslm_link_icon a:hover {background: #e43039;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_data_wrapper div.jslm_data_wrapper div.jslm_left div.jslm_left_img_wrp div.overlay div.jslm_overlay_bottom div.jslm_overlay_bottom_img {border: 1px solid #fff;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_data_wrapper div.jslm_data_wrapper div.jslm_left div.jslm_left_img_wrp div.overlay div.jslm_overlay_bottom div.jslm_overlay_bottom_name span.jslm_overlay_bottom_instructor a.jslm_instructor_link {color:#fff;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_data_wrapper div.jslm_data_wrapper div.jslm_left div.jslm_left_img_wrp div.overlay div.jslm_overlay_bottom div.jslm_overlay_bottom_name span.jslm_overlay_bottom_instructor a.jslm_instructor_link:hover {color:#e43039;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_data_wrapper div.jslm_data_wrapper div.jslm_right div.jslm_right_top div.jslm_right_top_left .jslm_heading_style .jslm_course_title {color:#4d4d4d;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_data_wrapper:hover div.jslm_data_wrapper div.jslm_right div.jslm_right_top div.jslm_right_top_left .jslm_heading_style .jslm_course_title {color:#e43039;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_data_wrapper div.jslm_data_wrapper div.jslm_right_bottom{border-top: 1px solid #d4d4d5;background-color: #fafafa;}
+   div.jslearnmanager_courses_widget_wrapper div.jslearnmanager_courses_widget_data_wrapper div.jslm_data_wrapper div.jslm_right_bottom div.jslm_right_bottom_right div.jslm_right_bottom_price .jslm_heading_style {color: #fff;background: #3E4095;}
+
+
+
+    @media(min-width: 661px) and (max-width: 782px){
+        div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_comments_wrapper div.jslm_right_side div.jslm_top{border-bottom: 1px solid #d4d4d5;}
+    }
+    @media(min-width: 481px) and (max-width: 660px) {
+        /* Course List */
+        div.jslm_content_data div.jslm_data_container div.jslm_data_wrapper div.jslm_left{border-bottom: 1px solid #d4d4d5;}
+        /* Course detail */
+        div.jslm_content_data div.jslm_detail_wrapper div.jslm_middle_potion div.jslm_middle_top div.jslm_logo_wrp{border-bottom: 1px solid #d4d4d5;}
+        div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_home_data_wrapper div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field div.jslm_heading_right{border-bottom: 1px solid #d4d4d5;}
+        div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_reviews_wrapper div.jslm_comments_wrapper div.jslm_right_side div.jslm_top{border-bottom: 1px solid #d4d4d5;}
+        /* Login */
+        div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_right{border-top: 1px solid #d4d4d5;}
+        /* Register */
+        div.jslm_content_data div.jslm_nav_tab_wrapper ul.nav-tabs.jslm_ul_styling li.jslm_li_styling_reg{border-bottom: 1px solid #d4d4d5;border-right: none;}
+
+    }
+    @media (max-width: 480px) {
+        /* Course detail */
+        div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper ul.nav-tabs{border:1px solid #d4d4d5;border-bottom: unset;}
+        div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper ul li.jslm_li_border a.jslm_li_anchor_styling{border-bottom: 1px solid #d4d4d5 !important;}
+        div.jslm_content_data div.jslm_detail_wrapper div.jslm_middle_potion div.jslm_middle_top div.jslm_logo_wrp{border-bottom: 1px solid #d4d4d5;}
+        div.jslm_content_data div.jslm_detail_wrapper div.jslm_tabs_wrapper div.jslm_my_content div.jslm_home_data_wrapper div.jslm_home_data_row div.jslm_custom_fields_wrapper div.jslm_custom_field div.jslm_heading_right{border-bottom: 1px solid #d4d4d5;}
+        /* Messages */
+        div.jslm_content_data div.jslm_data_container div.jslm_message_wrapper div.jslm_top div.jslm_top_left div.jslm_img_wrapper {border:1px solid #d4d4d5;background: #fff;}
+        /* responsive table */
+        table.jslm-table thead a {color: #e43039;text-decoration: none;}
+        /* Lecture view */
+        div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper ul.jslm_modal_ul{border:1px solid #d4d4d5;}
+        div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper ul.jslm_modal_ul li.jslm_modal_li{border-bottom: 1px solid #d4d4d5 !important;}
+        div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper ul.jslm_modal_ul li.jslm_modal_li:nth-child(2),
+        div.jslm_content_data div.jslm_data_container div.jslm_lecture_curriculum_wrp div.jslm_curriculum_right_wrp div.jslm_right_content_wrapper ul.jslm_modal_ul li.jslm_modal_li:nth-child(4){border-left:1px solid #d4d4d5;}
+        /* Login */
+        div.jslm_content_data div.jslm_data_container div.jslm_login_wrapper div.jslm_login_right{border-top: 1px solid #d4d4d5;}
+        div.jslm_content_data div.jslm_nav_tab_wrapper ul.nav-tabs.jslm_ul_styling li.jslm_li_styling_reg{border-bottom: 1px solid #d4d4d5;}
+        div#jslearnmanager-wrapper div#jslearnmanager-messages-wrap div#jslearnmanager-msg-content-wrap div#jslearnmanager-msg-det-left {border-bottom: 1px solid #d4d4d5;}
+        div#jslearnmanager-wrapper div#jslearnmanager-credit-pack-wrap div#jslearnmanager-credit-pack-wrapper div.jslearnmanager-credit-pack-data div.jslearnmanager-credit-pack-data-top span.jslearnmanager-credit-pack-top-left{border-bottom: 1px solid #d4d4d5;}
+        div#jslearnmanager-wrapper div#jslearnmanager-purchase-history-wrap div.jslearnmanager-purchase-history-wrapper div.jslearnmanager-purchase-history-data span.jslearnmanager-data-parts span.jslearnmanager-data-title {border-bottom: 1px solid #d4d4d5;}
+
+        /* register */
+        div.jslm_content_data div.jslm_nav_tab_wrapper ul.nav-tabs.jslm_ul_styling li.jslm_li_styling_reg{border-right: none;}
+   }
+
+    </style>
+<meta name='robots' content='max-image-preview:large' />
+
+		<!-- Meta Tag Manager -->
+		<meta name="facebook-domain-verification" content="f6qmz1wyhna1622gt1ekcy0cyhjv9k" />
+		<!-- / Meta Tag Manager -->
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Feed para mensagensmagneticas.info &raquo;" href="https://mensagensmagneticas.info/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para mensagensmagneticas.info &raquo;" href="https://mensagensmagneticas.info/comments/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/mensagensmagneticas.info\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://mensagensmagneticas.info/wp-includes/css/dist/block-library/style.min.css?ver=5.9.1' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code>code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group:where(.has-background){padding:1.25em 2.375em}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #FFFFFF;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #28303D;--wp--preset--color--gray: #39414D;--wp--preset--color--green: #D1E4DD;--wp--preset--color--blue: #D1DFE4;--wp--preset--color--purple: #D1D1E4;--wp--preset--color--red: #E4D1D1;--wp--preset--color--orange: #E4DAD1;--wp--preset--color--yellow: #EEEADD;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--gradient--purple-to-yellow: linear-gradient(160deg, #D1D1E4 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-purple: linear-gradient(160deg, #EEEADD 0%, #D1D1E4 100%);--wp--preset--gradient--green-to-yellow: linear-gradient(160deg, #D1E4DD 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-green: linear-gradient(160deg, #EEEADD 0%, #D1E4DD 100%);--wp--preset--gradient--red-to-yellow: linear-gradient(160deg, #E4D1D1 0%, #EEEADD 100%);--wp--preset--gradient--yellow-to-red: linear-gradient(160deg, #EEEADD 0%, #E4D1D1 100%);--wp--preset--gradient--purple-to-red: linear-gradient(160deg, #D1D1E4 0%, #E4D1D1 100%);--wp--preset--gradient--red-to-purple: linear-gradient(160deg, #E4D1D1 0%, #D1D1E4 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 18px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 24px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--extra-small: 16px;--wp--preset--font-size--normal: 20px;--wp--preset--font-size--extra-large: 40px;--wp--preset--font-size--huge: 96px;--wp--preset--font-size--gigantic: 144px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='jslms-site-css'  href='https://mensagensmagneticas.info/wp-content/plugins/learn-manager/includes/css/site.css?ver=5.9.1' media='all' />
+<link rel='stylesheet' id='jslms-site-tablet-css'  href='https://mensagensmagneticas.info/wp-content/plugins/learn-manager/includes/css/site_tablet.css?ver=5.9.1' media='(min-width: 661px) and (max-width: 782px)' />
+<link rel='stylesheet' id='jslms-site-mobile-landscape-css'  href='https://mensagensmagneticas.info/wp-content/plugins/learn-manager/includes/css/site_mobile_landscape.css?ver=5.9.1' media='(min-width: 481px) and (max-width: 660px)' />
+<link rel='stylesheet' id='jslms-site-mobile-css'  href='https://mensagensmagneticas.info/wp-content/plugins/learn-manager/includes/css/site_mobile.css?ver=5.9.1' media='(max-width: 480px)' />
+<link rel='stylesheet' id='jslms-chosen-site-css'  href='https://mensagensmagneticas.info/wp-content/plugins/learn-manager/includes/js/chosen/chosen.min.css?ver=5.9.1' media='all' />
+<link rel='stylesheet' id='jslms-venobox-css-css'  href='https://mensagensmagneticas.info/wp-content/plugins/learn-manager/includes/css/venobox.css?ver=5.9.1' media='all' />
+<link rel='stylesheet' id='htbbootstrap-css'  href='https://mensagensmagneticas.info/wp-content/plugins/ht-mega-for-elementor/assets/css/htbbootstrap.css?ver=1.8.2' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' media='all' />
+<link rel='stylesheet' id='htmega-animation-css'  href='https://mensagensmagneticas.info/wp-content/plugins/ht-mega-for-elementor/assets/css/animation.css?ver=1.8.2' media='all' />
+<link rel='stylesheet' id='htmega-keyframes-css'  href='https://mensagensmagneticas.info/wp-content/plugins/ht-mega-for-elementor/assets/css/htmega-keyframes.css?ver=1.8.2' media='all' />
+<link rel='stylesheet' id='twenty-twenty-one-style-css'  href='https://mensagensmagneticas.info/wp-content/themes/twentytwentyone/style.css?ver=1.5' media='all' />
+<link rel='stylesheet' id='twenty-twenty-one-print-style-css'  href='https://mensagensmagneticas.info/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.5' media='print' />
+<link rel='stylesheet' id='elementor-icons-css'  href='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.14.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.5.6' media='all' />
+<link rel='stylesheet' id='elementor-post-8-css'  href='https://mensagensmagneticas.info/wp-content/uploads/elementor/css/post-8.css?ver=1646321768' media='all' />
+<link rel='stylesheet' id='elementor-pro-css'  href='https://mensagensmagneticas.info/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.6.2' media='all' />
+<link rel='stylesheet' id='elementor-global-css'  href='https://mensagensmagneticas.info/wp-content/uploads/elementor/css/global.css?ver=1646321840' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.9.1' media='all' />
+<script src='https://mensagensmagneticas.info/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='https://mensagensmagneticas.info/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://mensagensmagneticas.info/wp-json/" /><link rel="alternate" type="application/json" href="https://mensagensmagneticas.info/wp-json/wp/v2/pages/900" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mensagensmagneticas.info/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://mensagensmagneticas.info/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.9.1" />
+<link rel="canonical" href="https://mensagensmagneticas.info/v2/" />
+<link rel='shortlink' href='https://mensagensmagneticas.info/?p=900' />
+<link rel="alternate" type="application/json+oembed" href="https://mensagensmagneticas.info/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmensagensmagneticas.info%2Fv2%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://mensagensmagneticas.info/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmensagensmagneticas.info%2Fv2%2F&#038;format=xml" />
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="page-template page-template-elementor_canvas page page-id-900 wp-embed-responsive is-light-theme no-js singular elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-900">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>		<div data-elementor-type="wp-page" data-elementor-id="900" class="elementor elementor-900" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-4548be3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4548be3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-151ddec" data-id="151ddec" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-8f89a70 elementor-widget elementor-widget-html" data-id="8f89a70" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-70JZ3H1T77"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-70JZ3H1T77');
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '235949058705629');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=235949058705629&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '695140908591071');
+fbq('track', 'PageView', 'AddToCart', 'Purchase');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=695140908591071&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '509380570705696');
+  fbq('track', 'PageView' 'AddToCart');
+</script>
+<noscript><img loading="lazy" height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=509380570705696&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<meta name="facebook-domain-verification" content="f6qmz1wyhna1622gt1ekcy0cyhjv9k" />
+
+      <!-- Doppus Analytics -->
+<script>
+	(function(g,u,r,i,d,e,a){g.HubAnalyticsObject=d;if(!(d in g)){g[d]=function(){
+	g[d].q.push(arguments);};g[d].q=[];}g[d].l=(new Date()).getTime();var e=u.createElement(r);
+	e.src=i;e.async=true;var a=u.getElementsByTagName(r)[0];a.parentNode.insertBefore(e,a)
+	})(window,document,'script','//doppus.com/public/js/analytics.js','hub');
+
+	hub( 'init', 'HS-00856700432-3', 'AF-2253312' );
+	hub( 'pageview' );
+</script>
+<!-- End Doppus Analytics -->
+
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '749688079281651');
+  fbq('track', 'PageView');
+</script>
+<noscript><img loading="lazy" height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=749688079281651&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '749688079281651');
+  fbq('track', 'AddToCart');
+</script>
+<noscript><img loading="lazy" height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=749688079281651&ev=AdToCart&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '337562641265643');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=337562641265643&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '771391666886570');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=771391666886570&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '941113149782228');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=941113149782228&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '239375674704495');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=239375674704495&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+    <!-- HubSale Analytics -->
+    <script>
+      (function(g,u,r,i,d,e,a){g.HubAnalyticsObject=d;if(!(d in g)){g[d]=function(){
+      g[d].q.push(arguments);};g[d].q=[];}g[d].l=(new Date()).getTime();var e=u.createElement(r);
+      e.src=i;e.async=true;var a=u.getElementsByTagName(r)[0];a.parentNode.insertBefore(e,a)
+      })(window,document,'script','//hub.sale/public/js/analytics.js','hub');
+
+      hub( 'init', 'HS-856719706-9' );
+      hub( 'pageview' );
+    </script>
+    <!-- End HubSale Analytics -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WW6FC9K');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat&family=Open+Sans&family=Oswald&display=swap">
+    <style type="text/css">
+      body {
+        background: rgba(0, 0, 0, .30) url("https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/bg.jpg");
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .headline {
+        font-size: calc(1em + 1vw);
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+      }
+      .classeNova {
+        border-radius: 10px;
+        color: #444;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        font-family: Arial;
+        background-color:
+        #F6F7F9;
+        font-size: 14px;
+        padding-top: 20px;"
+      }
+      .paragrafo {
+        color: #444;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 1.5em;
+        margin: 0;
+        margin-left: 60px;
+        margin-bottom: 0px;
+      }
+      .a-btn {
+        text-decoration: none!important;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        color: #2e82bc;
+        outline: 0;
+        line-height: 1;
+        text-align: center;
+        position:relative!important; display: inline-block!important;
+        border-style: solid;
+        width: 100%; padding-left: 0!important; padding-right: 0!important;
+        margin-bottom: 10px;
+        padding: 22px 44px; border-color: #ff5535; border-width: 0px;
+        border-radius: 6px;
+        background: linear-gradient(to bottom, #ff6600 0%, #ff5535 100%);
+        box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5);
+      }
+      .span-btn {
+        text-decoration: none!important;
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        margin: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        display: block;
+        position: relative;
+        z-index: 1;
+        padding: 0 15px;
+        white-space: normal;
+        font-size: 25px;
+        color: #ffffff;
+        font-family: Oswald;
+        font-weight: bold;
+        text-shadow: #000000 0px 1px 0px;
+      }
+      .span-btn2 {
+        -webkit-font-smoothing: antialiased;
+        text-align: center;
+        padding: 0; border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin: .2em 0 -.5em;
+        font-size: 15px;
+        color: #f5e051;
+        font-family: Cabin;
+        font-weight: bold;
+        font-style: italic;
+        text-shadow: #000000 0px 1px 0px;
+      }
+      .comments {
+        font-family: 'Open Sans', sans-serif;
+      }
+      .comment {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+      }
+      .span {
+        color: #365899;
+        font-weight: bold;
+      }
+      .answer {
+        color: #444;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        vertical-align: baseline;
+        display: block;
+        padding-top: 10px;
+        line-height: 20px;
+        padding-left: 9px;
+        border-left: 1px solid #E9EBEE; margin-left: 50px; padding-bottom: 0;
+      }
+      .like {
+        font-size: 11px; color: #90949c;
+      }
+      .twenty1 {
+        font-weight: 700;
+        border-bottom: 1px solid #E9EBEE;
+        display: block;
+        padding-bottom: 6px;
+      }
+      .imgComment {
+        width: 60px;
+        height: 50px;
+        float: left;
+        padding-right: 10px;
+      }
+      .hide {
+        display: none;
+      }
+      .link {
+        color: white;
+      }
+      .link a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe loading="lazy" src="https://www.googletagmanager.com/ns.html?id=GTM-WW6FC9K"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="header pt-4 pb-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <img class="img-fluid mb-3" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/us.png">
+            <h2 class="headline mb-3">USE ESSAS 4 MENSAGENS SECRETAS E <font style="color: red;">QUALQUER HOMEM</font> VAI CORRER ATRÁS DE VOCÊ!</h2>
+            <script type="text/javascript" id="scr_6221fb1c3a6bc90008ffe873">var s=document.createElement("script");s.src="https://cdn.converteai.net/ce209ae8-fee9-4028-997d-8159bedcabe9/players/6221fb1c3a6bc90008ffe873/player.js",s.async=!0,document.head.appendChild(s);</script>
+            </div>
+            <div id="btn1" class="hide mt-3">
+              <a href="https://seguro.activeliss.com/checkout/008567124576?af=AF-2253312" class="a-btn">
+                <span class="span-btn">QUERO FAZER O PROGRAMA!</span>
+                <span class="span-btn2">(atenção: vagas limitadas)</span>
+              </a>
+              <div class="cards mt-2">
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/AMEX.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/BILLET.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/DINERS.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/ELO.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/HIPERCARD.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/MASTER_CARD.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/PAYPAL.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/VISA.svg"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comments mb-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="classeNova px-4">
+            <span class="twenty1">
+              21 comentários
+            </span>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/leticia.jpg" class="imgComment">
+                Leticia
+                disse</span>
+              <p class="paragrafo">
+                Feliiiz demais!!! Obrigada Fabiana, achava que o Guia n ia funcionar pq já tinha feito de td pro meu
+                namorado voltar, mas msmo assim quis tentar e olha agora parece que é nosso primeiro mês de namoro todo
+                dia 😍😍😍</p>
+              <span class="like">Responder
+                · Curtir · Seguir · 3 min</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/raquel.jpg" class="imgComment">Raquel
+                disse</span>
+              <p class="paragrafo">
+                Tava muito afim de um boy, mas vc sabe né? Nunca quis mostrar que tinha uma queda por ele de forma
+                direta!!! Então não sabia o que fazer... Usei as 4 palavras e agora ele não paaaara de me chamar no
+                whatsapp!!! 🙂</p>
+              <span class="like">Responder
+                · Curtir · Seguir · 5 min</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/cleusa.jpg" class="imgComment">Cleusa
+                disse</span>
+              <p class="paragrafo">
+                Tô de cara com esse guia! N sabia que realmente ia funcionar, tô naqueles 7 dias que vc flou e adivinha
+                ele me ligou e olha que nem tava atendeno mais minhas ligações!!!</p>
+              <span class="like">Responder
+                · Curtir · Seguir · 12 min</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/luisa.jpg" class="imgComment">Luisa
+                disse</span>
+              <p class="paragrafo">
+                Eu realmente precisava desse guia, achei o botão pra fazer funcionar o amor de novo 😀 ele já estava com
+                outra e eu achei que n ia ter mais jeito, mas deu certo!!! Estamos de casamento marcado!</p>
+              <span class="like">Responder
+                · Curtir · Seguir · 3 min</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/renata.jpg" class="imgComment">Renata
+                disse</span>
+              <p class="paragrafo">
+                Fabiana você devia vender esse guia por um milhããão ele funciona mesmo! Eu já tinha feito tudo que podia
+                e já tava bloqueada no facebook dele, agora estamos de novo juntos e felizes! Vou seguir os passos e
+                nunca mais vamos nos separar 😀</p>
+              <span class="like">Responder
+                · Curtir · Seguir · Agora mesmo</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/claudia-silva.jpg" class="imgComment">Claudia
+                Silva disse</span>
+              <p class="paragrafo">
+                Minha vida agora ao lado do Sergio é outra!!! Obrigada pelo guia Fabiana… Deus te abençoe.</p>
+              <span class="like">Responder
+                · Curtir · Seguir · 19 min</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/josiane.jpg" class="imgComment">
+                Josiane
+                disse</span>
+              <p class="paragrafo">
+                Já fazia dois anos que agente n estava mais junto e ele nem queria falar comigo… mas agora tudo passou
+                começamos de novo nossa vida juntos 🙂 brigado pelo guia é perfeito!</p>
+              <span class="like">Responder
+                · Curtir · Seguir · 26 min</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/ana-julia.jpg" class="imgComment">Ana
+                Julia disse</span>
+              <p class="paragrafo">
+                Meu marido separou de mim já faz 6 meses será que funciona?</p>
+              <span class="like">Responder
+                · Curtir · Seguir · 31 min</span>
+              <div class="answer comment">
+                <span class="span">
+                  <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/marcela.jpg" class="imgComment">Marcela
+                  disse</span>
+                <p class="paragrafo">
+                  Ana eu já estava separada fazia quase dois anos e tava pensano em desistir. O guia foi minha última
+                  tentativa que deu certo demais. Pode testar vc vai ver como funciona.</p>
+                <span class="like">Responder
+                  · Curtir · Seguir · 11 min</span>
+              </div>
+              <div class="answer comment">
+                <span class="span">
+                  <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/cristina.jpg" class="imgComment">Cristina
+                  disse</span>
+                <p class="paragrafo">
+                  Ana eu n era casada mas morava junto com ele e brigamos muito até terminar. depois que li o guia
+                  descobri o que fazer e hoje estamos juntos de novo já faz 2 anos.</p>
+                <span class="like">Responder
+                  · Curtir · Seguir · 5 min</span>
+              </div>
+              <div class="answer comment">
+                <span class="span">
+                  <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/ana-julia.jpg" class="imgComment">Ana
+                  Julia disse</span>
+                <p class="paragrafo">
+                  Brigada meninas, vou tentar 🙂</p>
+                <span class="like">Responder
+                  · Curtir · Seguir · 3 min</span>
+              </div>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/rosane.jpg" class="imgComment">Rosane
+                disse</span>
+              <p class="paragrafo">
+                O cara que estava afim estava morando em outra cidade, e adivinha? Estou arrumando as malas pra ficar
+                com ele pq ele quase ficou de joelhos insistindo por isso!!! Amando!!! Obrigada pelo Guia 😀</p>
+              <span class="like">Responder
+                · Curtir · Seguir · 3 min</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/jessica.jpg" class="imgComment">Jessica
+                disse</span>
+              <p class="paragrafo">
+                Gente eu tenho medo de gastar dinheiro e não dar certo 🙁</p>
+              <span class="like">Responder
+                · Curtir · Seguir · Agora mesmo</span>
+              <div class="answer comment">
+                <span class="span">
+                  <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/laura.jpg" class="imgComment">Laura
+                  disse</span>
+                <p class="paragrafo">
+                  Eu pensava a mesma coisa, mas compraria 10 vezes depois que vi que funciona 🙂 Bora ser feliz flor! A
+                  gente merece depois que luta tanto</p>
+                <span class="like">Responder
+                  · Curtir · Seguir · Agora mesmo</span>
+              </div>
+              <div class="answer comment">
+                <span class="span">
+                  <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/bruna.jpg" class="imgComment">Bruna
+                  disse</span>
+                <p class="paragrafo">
+                  Funciona sim flor! Pode acreditar. Meu ex nem falava comigo e tinha me bloquiado no zap… agora quem
+                  fica no meu pé é ele.</p>
+                <span class="like">Responder
+                  · Curtir · Seguir · Agora mesmo</span>
+              </div>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/claudia.jpg" class="imgComment">Claudia
+                disse</span>
+              <p class="paragrafo">
+                Gente eu achava que era mentira, mas tudo dando certo…. eu me sentia muito pra baixo, mal amada. Cheguei
+                ao ponto de ir numa consulta grátis de psicologa na minha universidade... Por anos eu fiquei sem
+                ninguém, não conseguia chamar a atenção de nenhuma pessoa que me interessava... Com esse guia, consegui
+                o impossível! Eu não to acreditando.</p>
+              <span class="like">Responder
+                · Curtir · Seguir · 1h</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/adriana.jpg" class="imgComment">Adriana
+                disse</span>
+              <p class="paragrafo">
+                Fabiana vc ta vendendo muito barato! @luanasouza esse aqui que te falei que funcionou pra mim. Pode
+                comprar!</p>
+              <span class="like">Responder
+                · Curtir · Seguir · Agora mesmo</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/aline.jpg" class="imgComment">Aline
+                disse</span>
+              <p class="paragrafo">
+                Acabei de receber a ligação do boyyyy!!!! Ahhhh não acredito ta funcionando!!!</p>
+              <span class="like">Responder
+                · Curtir · Seguir · 12 min</span>
+            </div>
+            <div class="comment">
+              <span class="span">
+                <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/stefany.jpg" class="imgComment">Stefany
+                disse</span>
+              <p class="paragrafo">
+                Comprei o curso e está funcionando!!! Vamos sair amanhã 😉 vou colocar as outras lições em prática 😀
+              </p>
+              <span class="like">Responder
+                · Curtir · Seguir · Agora mesmo</span>
+              <div class="answer comment">
+                <span class="span">
+                  <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/vitoria.jpg" class="imgComment">
+                  Vitória
+                  disse</span>
+                <p class="paragrafo">
+                  Funciona msmo?</p>
+                <span class="like">Responder
+                  · Curtir · Seguir · Agora mesmo</span>
+              </div>
+              <div class="answer comment">
+                <span class="span">
+                  <img src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/profiles/stefany.jpg" class="imgComment">Stefany
+                  disse</span>
+                <p class="paragrafo">
+                  Eu fiz td q ele ensina desde que comprei e foi direitinho que nem ele fala no guia. quem me ligo foi
+                  meu ex e n eu.</p>
+                <span class="like">Responder
+                  · Curtir · Seguir · Agora mesmo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="btn2" class="hide">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <div class="mt-3">
+              <a href="https://seguro.activeliss.com/checkout/8567837045/12" class="a-btn">
+                <span class="span-btn">QUERO FAZER O PROGRAMA!</span>
+                <span class="span-btn2">(atenção: vagas limitadas)</span>
+              </a>
+              <div class="cards mt-2">
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/AMEX.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/BILLET.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/DINERS.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/ELO.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/HIPERCARD.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/MASTER_CARD.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/PAYPAL.svg"></img>
+                <img class="img-fluid" src="https://bkp.mensagensmagneticas.info/wp-content/themes/twentytwentyone/allFiles/cards/VISA.svg"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer mt-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="link"><a href="https://mensagensmagneticas.info/termos">Termos de Uso</a> | <a href="https://mensagensmagneticas.info/politica">Política de Privacidade</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function showBtn () {
+        document.getElementById("btn1").classList.remove("hide")
+        document.getElementById("btn2").classList.remove("hide")
+      }
+      setTimeout(showBtn, 23*60000);
+    </script>
+    <!-- HubSale Track -->
+    <script defer="defer" type="text/javascript">
+      hub( 'track', 'pv97' );
+    </script>
+    <!-- End HubSale Track -->
+    <!-- Doppus Track -->
+<script defer="defer" type="text/javascript">
+	hub( 'track', 'V2' );
+</script>
+<!-- End Doppus Track -->
+  </body>
+</html>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+					</div>
+		<script>document.body.classList.remove("no-js");</script>	<script>
+	if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
+		document.body.classList.add( 'is-IE' );
+	}
+	</script>
+	<link rel='stylesheet' id='e-animations-css'  href='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.5.6' media='all' />
+<script src='https://mensagensmagneticas.info/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1' id='jquery-ui-core-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/ht-mega-for-elementor/assets/js/popper.min.js?ver=1.8.2' id='htmega-popper-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/ht-mega-for-elementor/assets/js/htbbootstrap.js?ver=1.8.2' id='htbbootstrap-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/ht-mega-for-elementor/assets/js/waypoints.js?ver=1.8.2' id='waypoints-js'></script>
+<script id='twenty-twenty-one-ie11-polyfills-js-after'>
+( Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach ) || document.write( '<script src="https://mensagensmagneticas.info/wp-content/themes/twentytwentyone/assets/js/polyfills.js?ver=1.5"></scr' + 'ipt>' );
+</script>
+<script src='https://mensagensmagneticas.info/wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=1.5' id='twenty-twenty-one-responsive-embeds-script-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.6.2' id='elementor-pro-webpack-runtime-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.5.6' id='elementor-webpack-runtime-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.5.6' id='elementor-frontend-modules-js'></script>
+<script src='https://mensagensmagneticas.info/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script src='https://mensagensmagneticas.info/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script src='https://mensagensmagneticas.info/wp-includes/js/dist/hooks.min.js?ver=1e58c8c5a32b2e97491080c5b10dc71c' id='wp-hooks-js'></script>
+<script src='https://mensagensmagneticas.info/wp-includes/js/dist/i18n.min.js?ver=30fcecb428a0e8383d3776bcdd3a7834' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id='elementor-pro-frontend-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "elementor-pro", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/mensagensmagneticas.info\/wp-admin\/admin-ajax.php","nonce":"b1c4a42207","urls":{"assets":"https:\/\/mensagensmagneticas.info\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/mensagensmagneticas.info\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/mensagensmagneticas.info\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.6.2' id='elementor-pro-frontend-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.5.6' id='share-link-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.9.0' id='elementor-dialog-js'></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.5.6","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"theme_builder_v2":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"page-transitions":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/mensagensmagneticas.info\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":900,"title":"v2%20%E2%80%93%20mensagensmagneticas.info","excerpt":"","featuredImage":false}};
+</script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.5.6' id='elementor-frontend-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.6.2' id='pro-preloaded-elements-handlers-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.5.6' id='preloaded-modules-js'></script>
+<script src='https://mensagensmagneticas.info/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.6.2' id='e-sticky-js'></script>
+		<script>
+		/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
+		</script>
+			</body>
+</html>
